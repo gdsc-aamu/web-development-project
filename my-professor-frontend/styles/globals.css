@@ -1,0 +1,70 @@
+/* GLOBAL CSS STYLES */
+/* TODO: This file contains base styles that apply to the entire app */
+/* Students do not need to modify this file */
+
+/* Import Tailwind's base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles for body */
+body {
+  @apply bg-background text-text font-sans;
+}
+
+/* Typography */
+h1 {
+  @apply text-4xl font-bold;
+}
+
+h2 {
+  @apply text-2xl font-semibold;
+}
+
+h3 {
+  @apply text-xl font-medium;
+}
+
+p {
+  @apply text-base leading-relaxed;
+}
+
+/* Buttons */
+button {
+  @apply px-4 py-2 rounded-lg font-medium transition duration-300;
+}
+
+button.primary {
+  @apply bg-primary text-white hover:bg-primary-dark;
+}
+
+button.secondary {
+  @apply bg-gray-200 text-gray-800 hover:bg-gray-300;
+}
+
+/* Input Fields */
+input, textarea {
+  @apply border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary;
+}
+
+/* Card Styling */
+.card {
+  @apply bg-white shadow-lg rounded-lg p-4 border border-gray-200;
+}
+
+/* Dark Mode */
+.dark body {
+  @apply bg-gray-900 text-white;
+}
+
+.dark .card {
+  @apply bg-gray-800 border-gray-700;
+}
+
+.dark button.primary {
+  @apply bg-primary-light hover:bg-primary;
+}
+
+.dark input, .dark textarea {
+  @apply bg-gray-800 border-gray-600 text-white focus:ring-primary-light;
+}
