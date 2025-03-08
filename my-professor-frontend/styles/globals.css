@@ -3,9 +3,9 @@
 /* Students do not need to modify this file */
 
 /* Import Tailwind's base styles */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 /* Base styles for body */
 body {
