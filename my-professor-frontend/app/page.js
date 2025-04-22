@@ -3,6 +3,7 @@
 // 2. Add a button that links to the search page.
 // 3. Use a visually appealing heading and a short description.
 // 4. Follow the Figma design in terms of spacing and structure.
+
 import Image from "next/image";
 import Link from "next/link";
 
